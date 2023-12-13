@@ -8,7 +8,7 @@
 }
 
 :root{
-    --main-color:#00a8ff;
+    --main-color:#01a9ff;
     --text: #ebe6e6;
 }
   
@@ -73,6 +73,7 @@
   }
   .header h1{
     color: var(--text);
+      padding:0 10px 0 10px;
     text-align: center;
   }
 
