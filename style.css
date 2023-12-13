@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --main-color:#00a8ff;
+    --text: #ebe6e6;
+}
+  
+  .loader-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+  }
+  
+  #loadingVideo {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    padding: 20px;
+  }
+  .container{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--main-color);
+    font-family: 'Raleway', sans-serif;
+  }
+  .logo{
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .logo img{
+    width: 220px;
+    height: 160px;
+    transform: translateY(0%);
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-iteration-count: 1;
+    transition: 1s;
+  }
+
+
+  @keyframes move {
+    0%{
+        transform: translateY(-30%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+  }
+
+  .header{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header h1{
+    color: var(--text);
+    text-align: center;
+  }
+
+
+  .links{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .links a,
+  .links div{
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+  }
+  .links i{
+    padding-right: 5px;
+  }
+  .links div span{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
